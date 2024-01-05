@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <header class="bg-[url('img/header__bg.svg')] ">
+        <div class="container flex justify-between">
+            <div class="flex gap-3">
+                <p class="text-white">
+                    Toshkent
+                </p>
+                <img src="img/weather__icon.svg" alt="weather">
+                <p class="text-white">28°C</p>
+            </div>
+            <img src="img/logo.svg" alt="Akcent">
+            <select class="bg-transparent text-white hover:" id="weather">
+                <option value="uz">O'zbekcha</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+    <h1 class="font-MetaSerifProBold">Hello</h1>
 
-
-
-
-<h1>hbrevcjdnksfe</h1>
-<h2>wdhebrh</h2>
 
 
 
@@ -24,12 +37,23 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
+          extend: {
+            container: {
+                maxWidth: "1180px",
+                padding: "1rem",
+                center: true,
+            },
           colors: {
+            white: "#fff",
             BG100: "#F2F2FA",
             dark100: "#151515",
             mainPurple: "#151515",
             grey100: "rgba(255, 255, 255, 0.60)",
+          },
+          fontFamily: {
+            MetaSerifProBold: "MetaSerifPro-Bold",
+            MetaSerifProMedium: "MetaSerifPro-Medium",
+            MetaSerifProLight: "MetaSerifPro-Light",
           }
         }
       }
