@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+
+    <header class="bg-[url('img/error__bg.svg')] pt-8 pb-44">
+        <div class="container">
+          <div class="flex justify-between items-start pb-8">
+            <div class="flex gap-3 items-center">
+              <p class="text-white font-MetaSerifProMedium font-normal">
+                Toshkent
+              </p>
+              <img src="img/weather__icon.svg" alt="weather" />
+              <p class="text-white font-MetaSerifProMedium font-normal">28°C</p>
+            </div>
+            <img src="img/logo.svg" alt="Akcent" />
+            <select
+              class="bg-transparent text-white hover:text-purple transition-all ease-in duration-100 sm:hidden hidden md:block lg:block xl:block"
+              id="weather"
+            >
+              <option value="uz">O'zbekcha</option>
+              <option value="ru">Русский</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+          <div class="flex items-center justify-between pt-6">
+            <ul class="flex items-center justify-between gap-6  sm:hidden hidden md:block md:flex lg:block lg:flex xl:block xl:flex">
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Siyosat</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Jamiyat</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Tahlil</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Qonunchilik</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="flex items-center justify-between gap-8 hover:text-purple transition-all duration-100 ease-in"
+            >
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Aksent-TV</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm font-medium uppercase hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >Nuqtai nazar</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-white text-sm uppercase font-medium hover:text-purple transition-all duration-100 ease-in"
+                  href="#"
+                  >info-taqdim</a
+                >
+              </li>
+              <img class="sm: sm:hidden hidden md:block md:flex lg:block lg:flex xl:block xl:flex" src="img/hr_y.svg" alt="" />
+              <div class="block">
+                <svg class="block"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.99992 10.5C2.99992 14.6421 6.35779 18 10.4999 18C12.2316 18 13.8261 17.4131 15.0956 16.4275C15.1434 16.5286 15.2092 16.6234 15.2928 16.7071L19 20.4142C19.3905 20.8047 20.0237 20.8047 20.4142 20.4142C20.8047 20.0237 20.8047 19.3905 20.4142 19L16.707 15.2929C16.6234 15.2092 16.5286 15.1435 16.4274 15.0957C17.4131 13.8262 17.9999 12.2316 17.9999 10.5C17.9999 6.35786 14.6421 3 10.4999 3C6.35779 3 2.99992 6.35786 2.99992 10.5ZM4.99992 10.5C4.99992 7.46243 7.46235 5 10.4999 5C13.5375 5 15.9999 7.46243 15.9999 10.5C15.9999 13.5376 13.5375 16 10.4999 16C7.46235 16 4.99992 13.5376 4.99992 10.5Z"
+                    fill="white"
+                    class="hover:fill-purple transition-all duration-100 ease-in"
+                  />
+                </svg>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <img src="img/hr_x.svg" class="pt-5" alt="chiziq" />
+        <img class="absolute top-26" src="img/hr_x2.svg" alt="arrow" />
+        
+
+        <div class="container py-40 flex flex-col items-end">
+            <img src="img/404.svg" alt="404"/>
+            <h4 class="text-white text-4xl font-semmibold pt-4 pb-2">
+                Sahifa topilmadi
+            </h4>
+            <p class="text-white text-end text-xl font-medium max-w-[322px]">Siz izlayotgan sahifa mavjud emas yoki o‘chirib yuborilgan</p>
+            <a href="index.html" class="py-2 px-16 mt-3 bg-white/10 text-white text-sm">Asosiy sahifaga qaytish</a>
+        </div>
+
+      </header>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              DEFAULT: "1rem",
+              xs: "1.5rem",
+              ss: "1.5rem",
+              sm: "2rem",
+              lg: "4rem",
+              xl: "6rem",
+              maxWidth: "1080px",
+              center: true,
+            },
+            colors: {
+              dark: {
+                DEFAULT: "#151515",
+              },
+              white: {
+                DEFAULT: "#FFF",
+              },
+              grey: {
+                DEFAULT: "rgba(255, 255, 255, 0.60)",
+                100: "#A1A1A1",
+              },
+              purple: {
+                DEFAULT: "#7B7BFF",
+              },
+              BG100: "#F2F2FA",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
